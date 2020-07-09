@@ -1,0 +1,97 @@
+/* body */
+
+
+
+/* header */
+
+header{
+    margin-bottom: 5rem;
+}
+.banner{
+    text-align: center;
+    background: url('images/hamburger.jpg') scroll no-repeat center center;
+    background-size: cover;
+    
+}
+
+.overlay{
+    padding-top: 15rem;
+    padding-bottom: 18rem;
+    background-color: black;
+    opacity: 0.3;
+    background-size: cover;
+}
+
+.banner-subheading{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.heading{
+    font-size: 3rem;
+}
+
+.banner-store{
+    background: url('images/sendwitch.jpeg') scroll no-repeat center center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-size: cover;
+}
+
+
+
+
+/* Image */
+
+.rotation-img {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.img-fluid{
+    transition: transform .4s;
+}
+
+
+.pers{
+    perspective: 500px;
+
+}
+
+.pers .img-fluid:hover{
+    transform: rotateX(10deg) scale(1.1);
+}
+
+
+
+/* btn */
+
+.rotation-btn{
+    transform: scale(1.1);
+}
+
+.btn{
+    transition: transform cubic-bezier(0.75, 0.09, 0.4, 0.84) .3s;
+    font-weight: bold;
+}
+
+/* slidown */
+
+@keyframes slidedown{
+
+    from{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body{
+    animation: slidedown 2s;
+
+}
